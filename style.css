@@ -38,15 +38,15 @@ body {
     background-color: grey; 
 } */
 #experience{
-    background-color: grey;
+    background-color: #e6e9f2;
 }
 
 
 /* text css above hero image*/
-.hero_title {
+.intro_title {
     font-size: 4.5rem;
 }
-.hero_desc {
+.intro_desc {
     font-size: 2rem;
 }
 .hero-text {
@@ -60,16 +60,12 @@ body {
 
 .navbar{
     background-color: transparent;
-    transition: all 0.5s;
-}
-
-.nav.navbar-nav.ms-autoa {
-    color: orangered;
+    transition: all 0.8s;
 }
 
 
 .navbarScroll{
-    background: lightblue;
+    background: black;
     box-shadow: 0 3px 10 px rgba(0,0,0,0.15);
 }
 
