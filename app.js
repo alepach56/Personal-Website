@@ -5,7 +5,7 @@ window.onscroll = function() {
     if(top >=100) {
         header.classList.add('navbarScroll');
     }
-    else {
+    else if (top < 100){
         header.classList.remove('navbarScroll');
     }
 }

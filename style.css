@@ -13,22 +13,35 @@ body {
 */
 
 .image1 {
-    display: none;
-    width: 50px; 
+    width: 100%;
+    /*
+    width: 250px; 
     max-width: 100%;
     height: auto; 
-    margin-left: 10px; 
+    margin-left: 10px; */
 }
 
 
 
+/*
+    max-width: 100%;
+    position:relative;
+    background-repeat: no-repeat; */
 
 .background {
     height:100vh;
-    background: url('img/HomeBackground.jpg');
-    background-size:cover;
-    position:relative;
+    background: url('img/HomeBackgroundA.jpg');
+    background-size: cover;
 }
+/*
+#about{
+    background-color: grey; 
+} */
+#experience{
+    background-color: grey;
+}
+
+
 /* text css above hero image*/
 .hero_title {
     font-size: 4.5rem;
@@ -45,20 +58,20 @@ body {
     color: white;
 }
 
-
-
-
 .navbar{
     background-color: transparent;
     transition: all 0.5s;
 }
 
-.nav.navbar-nav.ms-auto li a {
-    color: blue;
+.nav.navbar-nav.ms-autoa {
+    color: orangered;
 }
 
 
 .navbarScroll{
-    background: gray;
+    background: lightblue;
     box-shadow: 0 3px 10 px rgba(0,0,0,0.15);
 }
+
+
+
