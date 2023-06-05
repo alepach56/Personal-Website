@@ -13,13 +13,30 @@ body {
 */
 
 .image1 {
-    width: 100%;
+    width: 90%;
+    bottom: 100px;
     /*
     width: 250px; 
     max-width: 100%;
     height: auto; 
     margin-left: 10px; */
 }
+.sdsulogo{
+    max-width: 100%;
+    height: auto;
+    width: 30%;
+    position: relative;
+
+
+    bottom: 95%;
+    left: 70%
+    
+}
+/*
+bottom: -40%;
+left: 60%;
+width: 20%;
+float:right;
 
 
 
@@ -58,6 +75,8 @@ body {
     color: white;
 }
 
+
+/* Navbar Section*/
 .navbar{
     background-color: transparent;
     transition: all 0.8s;
