@@ -14,7 +14,6 @@ body {
 
 .image1 {
     width: 90%;
-    bottom: 100px;
     /*
     width: 250px; 
     max-width: 100%;
@@ -24,13 +23,16 @@ body {
 .sdsulogo{
     max-width: 100%;
     height: auto;
-    width: 30%;
-    position: relative;
-
-
-    bottom: 95%;
-    left: 70%
     
+}
+.dhlogo{
+    max-width: 100%;
+    height: auto;
+}
+
+.wblogo{
+    max-width: 100%;
+    height: auto;
 }
 /*
 bottom: -40%;
@@ -80,6 +82,7 @@ float:right;
 .navbar{
     background-color: transparent;
     transition: all 0.8s;
+    
 }
 
 
@@ -90,3 +93,11 @@ float:right;
 
 
 
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+  
+  .custom-toggler.navbar-toggler {
+    border-color: rgb(255,255,255);
+  } 
