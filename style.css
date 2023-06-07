@@ -10,7 +10,7 @@ html{
 }
 
 .navbarScroll{
-    background: black;
+    background:  #1d2ab1;
     box-shadow: 0 3px 10 px rgba(0,0,0,0.15);
 }
 
@@ -27,7 +27,7 @@ html{
 /* background */
 .background {
     height:100vh;
-    background: url('img/HomeBackgroundA.jpg');
+    background: url('img/BackgroundD.jpg');
     background-size: cover;
 }
 .intro_title {
@@ -47,6 +47,7 @@ html{
 }
 
 /* About Section */
+
 .image1 {
     width: 90%;
 }
@@ -54,7 +55,8 @@ html{
 /* Education Section */
 
 #education{
-    background-color: #e6e9f2;
+    background: url('img/BackgroundD.jpg');
+  /*  background-color: #def2fc; */
     padding-bottom: 20px;
 }
 
@@ -84,7 +86,7 @@ html{
     width: 75%;
     opacity: 0;
     transition: .65s ease;
-    background-color: #cc5353;
+    background-color: #ffffff;
     
     margin-left: auto;
     margin-right: auto;
@@ -97,7 +99,7 @@ html{
   
   .textA {
     width: 80%;
-    color: rgb(255, 255, 255);
+    color: #1d2ab1;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -162,7 +164,7 @@ html{
     width: 75%;
     opacity: 0;
     transition: .65s ease;
-    background-color: #dce2f3;
+    background-color: white;
 
     margin-left: auto;
     margin-right: auto;
@@ -175,7 +177,7 @@ html{
   
   .textB {
     width: 80%;
-    color: rgb(207, 0, 0);
+    color: #1d2ab1;
     position: absolute;
     overflow: hidden;
     top: 50%;
@@ -238,7 +240,8 @@ html{
 
 /* Project Section*/
 #projects{
-    background-color: #e6e9f2;;
+    background: url('img/BackgroundD.jpg');
+    /*background-color: #def2fc;*/
 }
 
 .contA.row{
@@ -381,7 +384,7 @@ html{
     width: 100%;
     z-index: -1;
     border-radius: 6px;
-    background: #111;
+    background: #2159cf;
     transition: all 0.3s ease-in;
    }
 
