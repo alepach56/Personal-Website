@@ -65,44 +65,77 @@ html{
   
   .sdsulogo2 {
     display: block;
-    width: 60%;
+    width: 65%;
     height: auto;
 
     margin-left: auto;
     margin-right: auto;
+
+    
   }
   
   .middleA {
     position: absolute;
     top: 0;
-    bottom: 100%;
+    bottom: 0;
     left: 0;
     right: 0;
-    height: 0;
-    width: 70%;
+    height: 100%;
+    width: 75%;
     opacity: 0;
-    transition: .5s ease;
-    background-color: #000000;
-
+    transition: .65s ease;
+    background-color: #cc5353;
+    
     margin-left: auto;
     margin-right: auto;
-
+    
   }
   
   .containerA:hover .middleA {
     opacity: 1;
-    bottom: 0;
-    height: 100%;
   }
   
   .textA {
-    color: rgb(255, 221, 26);
+    width: 80%;
+    color: rgb(255, 255, 255);
     position: absolute;
-    overflow: hidden;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+
+    font-size: 2.0rem;
+    text-align:left;
+    
+  }
+  .textA h4{
+    font-size: 2.25rem;
+  }
+  @media (max-width: 1200px) {
+    .textA {
+      font-size: 1.0rem; /* Adjusted font size for smaller screens */
+    }
+    .textA h4{
+        font-size: 1.25rem;
+      }
+  }
+  
+  @media (max-width: 768px) {
+    .textA {
+      font-size: 0.75rem; /* Further adjusted font size for smaller screens */
+    }
+    .textA h4{
+        font-size: 1.00rem;
+      }
+  }
+  
+  @media (max-width: 576px) {
+    .textA {
+      font-size: 0.5rem; /* Adjusted font size for mobile screens */
+    }
+    .textA h4{
+        font-size: 0.8rem;
+      }
   }
 
   .containerB {
@@ -112,7 +145,7 @@ html{
   
   .wblogo2 {
     display: block;
-    width: 60%;
+    width: 65%;
     height: auto;
 
     margin-left: auto;
@@ -122,13 +155,13 @@ html{
   .middleB {
     position: absolute;
     top: 0;
-    bottom: 100%;
+    bottom: 0;
     left: 0;
     right: 0;
-    height: 85%;
-    width: 70%;
+    height: 100%;
+    width: 75%;
     opacity: 0;
-    transition: .5s ease;
+    transition: .65s ease;
     background-color: #dce2f3;
 
     margin-left: auto;
@@ -138,11 +171,10 @@ html{
   
   .containerB:hover .middleB {
     opacity: 1;
-    bottom: 0;
-    height: 100%;
   }
   
   .textB {
+    width: 80%;
     color: rgb(207, 0, 0);
     position: absolute;
     overflow: hidden;
@@ -150,6 +182,38 @@ html{
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    font-size: 2.0rem;
+    text-align:left;
+  }
+
+  .textB h4{
+    font-size: 2.25rem;
+  }
+  @media (max-width: 1200px) {
+    .textB {
+      font-size: 1.0rem; /* Adjusted font size for smaller screens */
+    }
+    .textB h4{
+        font-size: 1.25rem;
+      }
+  }
+  
+  @media (max-width: 768px) {
+    .textB {
+      font-size: 0.75rem; /* Further adjusted font size for smaller screens */
+    }
+    .textB h4{
+        font-size: 1.00rem;
+      }
+  }
+  
+  @media (max-width: 576px) {
+    .textB {
+      font-size: 0.5rem; /* Adjusted font size for mobile screens */
+    }
+    .textB h4{
+        font-size: 0.8rem;
+      }
   }
 
 /* Experience */
@@ -169,9 +233,14 @@ html{
     height: auto;
 }
 
+/* Project Section*/
+#Projects{
+    background-color: #e6e9f2;;
+}
+
 /* contact section */
 #contact{
-    background-color: #e6e9f2;
+    
 }
 
 
