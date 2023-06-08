@@ -241,120 +241,14 @@ html{
 /* Project Section*/
 #projects{
     background: url('img/BackgroundD.jpg');
-    /*background-color: #def2fc;*/
 }
 
-.contA.row{
-    height: 150px;
-}
-.containerD{
-    flex-wrap: wrap;
-    height: 150px;
-}
-.containerE{
-    position: relative;
-    top: 0px;
-    flex-wrap: wrap;
-    height: 150px;
+.text-container {
+    display: none;
 }
 
-
-.boxAA{
-    display:inline-block;
-    margin:50px auto;
-    width: 300px;
-    height: 150px;
-    line-height: 150px;
-    background: rgb(215, 224, 228);
-    color: #000000;
-    text-align: center;
-    transition: .3 ease;
-}
-.boxAA:hover{
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-}
-
-
-.boxAB{
-    display:inline-block;
-    margin:50px auto;
-    width: 300px;
-    height: 150px;
-    line-height: 150px;
-    background: rgb(215, 224, 228);
-    color: #000000;
-    text-align: center;
-    transition: .3 ease;
-}
-.boxAB:hover{
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-}
-.FTP{
-    position: relative;
-    height: 150px;
-    top: 0px;
-}
-
-.boxAC{
-    display:inline-block;
-    margin:50px auto;
-    width: 300px;
-    height: 150px;
-    line-height: 150px;
-    background: rgb(215, 224, 228);
-    color: #000000;
-    text-align: center;
-    transition: .3 ease;
-}
-.boxAC:hover{
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-}
-.boxBA{
-    display:inline-block;
-    margin:50px auto;
-    width: 300px;
-    height: 150px;
-    line-height: 150px;
-    background: rgb(215, 224, 228);
-    color: #000000;
-    text-align: center;
-    transition: .3 ease;
-}
-.boxBA:hover{
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-}
-
-.boxBB{
-    display:inline-block;
-    margin:50px auto;
-    width: 300px;
-    height: 150px;
-    line-height: 150px;
-    background: rgb(215, 224, 228);
-    color: #000000;
-    text-align: center;
-    transition: .3 ease;
-}
-.boxBB:hover{
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    
-}
-
-
-
-/* contact section */
-#contact{
-    
+.col-sm-5:hover .text-container {
+    display: block;
 }
 
 .ContactContainer {
