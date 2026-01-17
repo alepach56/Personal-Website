@@ -65,10 +65,10 @@ html{
     
   }
   
-  .sdsulogo2 {
+  .USClogo {
     display: block;
-    width: 65%;
-    height: auto;
+    width: 40%;
+    height: 40%;
 
     margin-left: auto;
     margin-right: auto;
@@ -83,7 +83,7 @@ html{
     left: 0;
     right: 0;
     height: 100%;
-    width: 75%;
+    width: 40%;
     opacity: 0;
     transition: .65s ease;
     background-color: #ffffff;
@@ -106,7 +106,7 @@ html{
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 
-    font-size: 2.0rem;
+    font-size: 1.5rem;
     text-align:left;
     
   }
@@ -145,10 +145,10 @@ html{
     
   }
   
-  .wblogo2 {
+  .sdsulogo2 {
     display: block;
-    width: 65%;
-    height: auto;
+    width: 30%;
+    height: 30%;
 
     margin-left: auto;
     margin-right: auto;
@@ -161,7 +161,7 @@ html{
     left: 0;
     right: 0;
     height: 100%;
-    width: 75%;
+    width: 30%;
     opacity: 0;
     transition: .65s ease;
     background-color: white;
@@ -184,7 +184,7 @@ html{
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    font-size: 2.0rem;
+    font-size: 1.5rem;
     text-align:left;
   }
 
@@ -219,6 +219,16 @@ html{
   }
 
 /* Experience */
+
+.uscfb{
+  max-width: 100%;
+  height: auto;
+}
+
+.pslogo{
+  max-width: 100%;
+    height: auto;
+}
 
 .sdsulogo{
     max-width: 100%;
