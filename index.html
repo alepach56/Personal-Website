@@ -2,402 +2,468 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alejandro Pacheco</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-
-  
-
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&family=Inter:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  
-  <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
-    <div class="container">
-        <a class="navbar-brand text-light" href="#">Alejandro</a>
-        <button class="navbar-toggler ml-auto custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto">
-                
-                <li class="nav-item active">
-                    <a class="nav-link text-light" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#education">Education</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#experience">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#contact">Contact</a>
-                </li>
-            </ul>
-            
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo"><span>ap</span>.io</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <div id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-inner">
+
+      <div class="hero-text fade-in">
+        <div class="hero-available">
+          <span class="pulse-dot"></span>
+          Looking for roles
         </div>
+        <h1 class="hero-name">
+          Alejandro<br /><em>Pacheco</em>
+        </h1>
+        <p class="hero-sub">
+          CS grad student @ USC. I build software at the intersection of
+          engineering and data analytics. I'm always looking
+          for the next problems to solve.
+        </p>
+        <div class="hero-chips">
+          <span class="chip">
+            <span class="chip-dot" style="background:var(--accent)"></span>
+            Los Angeles, CA
+          </span>
+          <span class="chip">
+            <span class="chip-dot" style="background:var(--warm)"></span>
+            CS M.S. @ USC
+          </span>
+          <span class="chip">
+            <span class="chip-dot" style="background:var(--accent2)"></span>
+            Fluent in Spanish
+          </span>
+        </div>
+        <div class="hero-btns">
+          <a href="#experience" class="btn btn-primary">view experience</a>
+          <a href="#contact" class="btn btn-ghost">get in touch</a>
+        </div>
+      </div>
+
+      <div class="hero-photo fade-in">
+        <div class="hero-photo-frame">
+          <img src="img/profile.jpg" alt="Alejandro Pacheco" />
+        </div>
+        <div class="photo-badge">
+          <div>
+            <div class="badge-label">undergrad gpa</div>
+            <div class="badge-value">3.88 / 4.0</div>
+          </div>
+        </div>
+        <div class="photo-decor"></div>
+      </div>
+
     </div>
-</nav>
+  </div>
 
-
-<script src ="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-  <section class = "background" id ="home">
-    <div class = "container-fluid">
-        <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-            <h2 class="intro_title">Hi! I'm <span class = "auto-type"></span></h2>
-            
-            <p class="intro_desc">Studying Computer Science at the University of Southern California</p>
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-eyebrow fade-in">
+      <span class="section-num">01</span>
+      <h2 class="section-title">About</h2>
+      <div class="section-rule"></div>
+    </div>
+    <div class="about-wrap">
+      <div class="about-story fade-in">
+        <p>
+          I'm a Computer Science graduate student at USC with a passion for building
+          things at the intersection of software engineering, data, and machine learning.
+        </p>
+        <p>
+          My undergraduate degree at San Diego State (3.88 GPA, Weber Honors College) gave me a
+          strong foundation in system design and algorithms. Since then I've shipped scalable products and features
+          at companies like PlayStation, Expedia Group, and Daily Harvest - and I still
+          teach what I know.
+        </p>
+        <p>
+          Outside of the classroom and coding, you'll likely find me watching new movies, at the gym, or hiking.
+        </p>
+        <div class="about-skills">
+          <div class="skills-label">languages &amp; tools</div>
+          <div class="skills-row">
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">Java</span>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">C / C++</span>
+            <span class="skill-pill">SQL</span>
+            <span class="skill-pill">Assembly</span>
+            <span class="skill-pill">Flask</span>
+            <span class="skill-pill">Django</span>
+            <span class="skill-pill">AWS</span>
+            <span class="skill-pill">GCP</span>
+            <span class="skill-pill">Terraform</span>
+            <span class="skill-pill">Tableau</span>
+            <span class="skill-pill">API</span>
+          </div>
         </div>
+      </div>
+
+      <div class="about-stats fade-in">
+        <div class="stat-card">
+          <span class="stat-val">5+</span>
+          <span class="stat-label">internships &amp; roles</span>
         </div>
+        <div class="stat-card">
+          <span class="stat-val">3.88</span>
+          <span class="stat-label">Undergraduate GPA</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-val">70%</span>
+          <span class="stat-label">Maintenance reduction @ PlayStation</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-val">500%</span>
+          <span class="stat-label">Report time reduction @ USC Football</span>
+        </div>
+      </div>
     </div>
   </section>
 
-<!-- about section-->  
-<section id="about">
-    <div class="container mt-4 pt-5">
-        <h1 class="text-center text-primary">Alejandro Pacheco</h1>
-        <div class="row mt-4">
-            <div class="col-lg-4">
-                <img src = "img/profile.jpg" alt="Image 1" class = "image1"/> </div>
-            
-            
-            <div class="col-lg-8">
-                <h4 class = "about_intro">
-                    Intro </h4>
-                <p class = "personal_description"> 
-                    I am a student at the <a href="https://www.usc.edu/">University of Southern California</a> pursuing a master's degree in Computer Science. For my undergraduate
-                    education, I went to <a href="https://www.sdsu.edu/">San Diego State University</a> where I received my Bachelor's in Computer Science and a minor in 
-                    Statistics emphasized in data analysis. I've had a variety of work experience varying from internships with 
-                    <a href= "https://www.playstation.com/">PlayStation</a> and <a href="https://expediagroup.com/">Expedia Group</a> as well as valuable 
-                    leadership experience through being a teacher assistant for numerous sections of Computer Science courses. Through my education at USC and
-                    San Diego State University, supportive mentorship, and personal research, I've gained insight on programming principles,
-                    helpful frameworks, and techniques to better myself in the field. Having said that, I am eager to learn more about the industry and the steps needed to succeed
-                    in future opportunities. </p>
-                <h4 class = "about_programminglanguages"> Programming Languages </h4>
-                <ul class = "programming_languages">
-                    <li>Languages Used: Java, Python, C, C++, HTML, CSS, JavaScript, SQL, Assembly</li> 
-                    <li>Frameworks Used: Bootstrap, Flask, Django, Struts</li>
-                    <li>Use git as a version control</li>
-                </ul>
-                <h4 class = "about_other"> Other Information </h4>
-                <ul class = "other_description">
-                    <li>Age: 22</li> 
-                    <li>Fluent in Spanish</li>
-                    <li>Profficient with Tableau and Microsoft Office including Excel</li>
-                    <li>Enjoys to spend free time at the gym and watching new movies</li>
-                </ul>
-                
-                </div> 
-        </div>     
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-eyebrow fade-in">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Experience</h2>
+      <div class="section-rule"></div>
     </div>
-    </div>
-</div>
-</section>
+    <div class="exp-list">
 
-<section id = "experience">
-    <div class = "container mt-5 pt-5">
-        <h1 class = "text-center text-primary"> Experience</h1>
-
-        <div class="row mt-3">
-            <div class="col">
-                <img src="img/uscFB.jpg" alt="Image 3" class="uscfb" />
-            </div>
-            <div class="col-lg-8">
-                <h4 class="about_intro">
-                    Analytics Intern </h4>
-                <a href="https://usctrojans.com/sports/football">USC Football</a>
-                <p>May 2025 - Present</p>
-        
-                <ul>
-                    <li>Automate weekly data collection by integrating the PFF API, reducing report preparation time by 500%.</li>
-                    <li>Conduct weekly opponent analysis reports for the USC Football team, providing insights to support game preparation and
-                    strategy.</li>
-                    <li>Design a customizable simulator leveraging play-by-play data and expected points models to recommend optimal choices
-                    in different game scenarios.</li>
-                </ul>
-            </div>
-            <div class="col"></div>
-        </div>
-
-        <div class="row mt-3">
-            <div class="col">
-                <img src="img/pslogo.jpg" alt="Image 3" class="pslogo" />
-            </div>
-            <div class="col-lg-8">
-                <h4 class="about_intro">
-                    Documenation Tools Intern </h4>
-                <a href="https://playstation.com/">Sony Interactive Entertainment (Playstation) </a>
-                <p>May 2025 - September 2025</p>
-        
-                <ul>
-                    <li>Developed a JavaScript plugin for OxygenXML, integrating AWS Lambda to notify users automatically when mentioned in
-                    documentation comments and code reviews.</li>
-                    <li>Reduced manual maintenance by 70% by partnering with engineering teams to design webhook and email notification
-                    systems using DynamoDB to update user access and tagging permissions in real time.</li>
-                    <li>• Streamlined documentation workflow by implementing user tagging and orchestrating notifications, lowering engineer
-                    lookup and response times by over 30%.</li>
-                </ul>
-            </div>
-            <div class="col"></div>
-        </div>
-
-        <div class="row mt-3">
-            <div class="col">
-                <img src="img/eg.png" alt="Image 3" class="EGlogo" />
-            </div>
-            <div class="col-lg-8">
-                <h4 class="about_intro">
-                    Data Science, Analytics Intern </h4>
-                <a href="https://expediagroup.com/">Expedia Group</a>
-                <p>May 2024 - July 2024</p>
-        
-                <ul>
-                    <li>Developed composite metric to assess effectiveness of retail customer service interactions at Expedia Group.</li>
-                    <li>Conducted statistical analysis in collaboration with analytics teams to identify key drivers of customer
-                    satisfaction and determine accurate penalty proportions for the metric.</li>
-                    <li>Queried data in SQL from millions of interactions to evaluate trends and uncover opportunities for growth.</li>
-                    <li>Implemented executive-level dashboards in Tableau, enabling data-driven decision-making by business
-                    leaders that reduced the length of phone service interactions by 0.25% within the first month.</li>
-                </ul>
-            </div>
-            <div class="col"></div>
-        </div>
-
-        <div class="row mt-3">
-            <div class="col">
-                <img src="img/SDSULogo.jpg" alt="Image 3" class="sdsulogo" />
-            </div>
-            <div class="col-lg-8">
-                <h4 class="about_intro">
-                    Research Assistant </h4>
-                <a href="https://sites.google.com/sdsu.edu/ai4businessv1/home?authuser=0">AI4Business Lab at SDSU</a>
-                <p>April 2024 - January 2025</p>
-        
-                <ul>
-                    <li>Conducting research under Dr. Luwen Huangfu’s supervision with the AI4Business Lab. </li>
-                    <li>Collaborate with PhD, graduate, and undergraduate students from academic institutions such as UC Irvine
-                    and other accredited universities.</li>
-                    <li>Performed an intricate study of large language models and the publication’s potential applications to
-                    software engineering, code processing, and code generation.</li>
-                    <li>Filtered, categorized, and analyzed hundreds of research papers to evaluate the future development of large
-                    code models and identify potential solutions to any challenges.</li>
-                </ul>
-            </div>
-            <div class="col"></div>
-        </div>
-
-        <div class="row mt-3">
-            <div class="col">
-                <img src="img/AQ.png" alt="Image 3" class="AQlogo" />
-            </div>
-            <div class="col-lg-8">
-                <h4 class="about_intro">
-                    Founder and Vice-President </h4>
-                <a href="https://aztecquantum.org/">Quantum Computing Club</a>
-                <p>May 2023 - August 2024</p>
-        
-                <ul>
-                    <li>Founded the first Quantum Computing Club at San Diego State University to expand student outreach for
-                    the subject at the school.</li>
-                    <li>Organized IBM certified events and distributed 28 Qiskit certificates to members of the club. </li>
-                    <li>Coordinated with the student board to communicate with faculty members and students from the university
-                    to direct operations and meetings for the group.</li>
-                    <li>Created curriculum to facilitate and oversee a 5-month long quantum computing project while leading
-                    several teams for successful delivery.</li>
-                </ul>
-            </div>
-            <div class="col"></div>
-        </div>
-
-        <div class="row mt-3">
-            <div class ="col">
-                <img  src = "img/SDSULogo.jpg" alt="Image 3" class = "sdsulogo"/>
-            </div>
-            <div class="col-lg-8">
-                <h4 class = "about_intro">
-                Teaching Assistant </h4>
-                <a href="https://www.sdsu.edu/">San Diego State University</a>
-                <p>August 2022 - Present</p>
-                
-                <ul> 
-                    <li>Synchronously aided 2 sections of Computer Organization at San Diego State University</li>
-                    <li>Implemented grading scripts to automatically grade student submissions on labs and homework</li>
-                    <li>Held 2 weekly office hours sessions available to 140 students to assist and guide questions regarding 
-                            programming assignments</li>
-                </ul>
-            </div>
-            <div class ="col"></div>
-        </div>
-        <div class="row mt-3">
-            <div class ="col">
-                <img  src = "img/Daily-Harvest-Logo.png" alt="Image 3" class = "dhlogo"/>
-            </div>
-            <div class="col-lg-8">
-                <h4 class = "about_intro">
-                Software Engineering Intern </h4>
-                <a href= "https://www.daily-harvest.com/">Daily Harvest</a>
-                <p>May 2022 - August 2022</p>
-                <ul> 
-                    <li> Upgraded legacy system which has logic to determine which shipments meet the criteria to obtain additional 
-                        promotional materials by removing dependencies on complex tools while refactoring code to fit current systems</li>
-                    <li>Increased server efficiency and improved code readability due to the creation and development of shared libraries</li>
-                    <li>Utilized Flask to create additional Restful APIs and Terraform for asynchronous task queues</li>
-                    <li>Used Git as a version control system to collaborate with team members and interact with CI/CD process</li>
-                    <li>Tools used: Python, Flask, Google Cloud Console, Storage buckets, Task queues, Circle Ci, Git, Restful 
-                        APIs, Peewee ORM</li>
-                </ul>
-            </div>
-            <div class ="col">
-            </div>
-        </div>
-        <div class="row mt-3">
-            <div class ="col">
-                <img  src = "img/wblogo.jpg" alt="Image 3" class = "wblogo"/>
-            </div>
-            <div class="col-lg-8">
-                <h4 class = "about_intro">
-                Club President </h4>
-                <a href= "https://woodbridgehigh.iusd.org/">Woodbridge High School</a>
-                <p>March 2020 - June 2021</p>
-                <ul> 
-                    <li> Founded the first Hispanic/Latinx club at Woodbridge High School to promote unity and inclusion</li>
-                    <li>Coordinated with the student board to communicate with faculty members and students from the school and 
-                        direct operations and meetings for the group</li>
-                    <li>Ensured the continuation of the club while at college and peaked at 27 members in our inaugural year</li>
-                </ul>
-            </div>
-            <div class ="col">
-            </div>
-        </div>
-
-    </div>
-</section>
-
-
-<section id="education">
-    <div class="container mt-5 pt-5">
-        <h1 class="EducationText text-center text-light"> Education</h1>
-
-        <div class="containerA">
-            <img src="img/uscFB.jpg" alt="USCLogo" class="USClogo" />
-            <div class="middleA">
-                <div class="textA">
-                    <h4>University of Southern California</h4>
-                    <p>Computer Science M.S.</p>
-                    <p>Member of Trojan Sports Research Lab</p>
-                    <p>Relevant Coursework: Machine Learning, Geospatial Data, Algorithms, Databases</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div class="containerB mt-4 pb-5">
-
-        <img src="img/SDSULogo2.jpg" alt="SDSULogo2" class="sdsulogo2" />
-        <div class="middleB">
-            <div class="textB">
-                <h4>San Diego State University</h4>
-                <p>Computer Science B.S, Statistics Minor</p>
-                <p>GPA: 3.91/4.0</p>
-                <p>Enrolled in Weber Honors College</p>
-                <p>Relevant Coursework: Data Structures, Computer Organization, Machine Learning,
-                    Artificial Intelligence</p>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    </div>
-
-</section>
-
-<!-- <div class="containerE col-sm-6 d-flex justify-content-center"> -->
-<section id = "projects">
-    <div class = "container mt-5 pt-5">
-        <h1 class = "text-center text-light"> Projects</h1>
-
-        <div class= "row mt-3 pb-3">
-            <div class="col-sm-5">
-                <!-- <a href="https://github.com/alepach56/Affine-Transformation" class="btn btn-outline-light " role="button" aria-pressed="true">Affine Transformation</a> -->
-                <button type="button" class="btn btn-outline-light" disabled>Spotify Wrapped Clone</button>
-                <div class="text-container text-light">
-                    NOTE: Link to web application will be published soon.
-                </div>
-            </div>
-            <div class="col-sm-2 "></div>
-            <div class="col-sm-5 ">
-                <a href="https://github.com/alepach56/Personal-Website" class="btn btn-outline-light " role="button" aria-pressed="true">Personal Portfolio</a>
-                <div class="text-container text-light">
-                    Website built with HTML, CSS, JavaScript, and Bootstrap. Website serves as a general portfolio and will
-                    continue to grow as I develop my projects. 
-                </div>
-            </div>
-        </div>
-
-        <div class="row mt-3 pb-3">
-            <div class="col-sm-5">
-                <a href="https://github.com/alepach56/TriviaGame" class="btn btn-outline-light " role="button" aria-pressed="true">Trivia Game</a>
-                <div class="text-container text-light">
-                    Trivia game built in Java as a final group project in high school. Utilized a balanced binary tree
-                    to accordingly lessen or increase the difficulty of questions based on correct or incorrect answers.
-                </div>    
-            </div>
-            <div class="col-sm-2 "></div>
-            <div class="col-sm-5">
-                <a href="https://github.com/alepach56/TicTacToe" class="btn btn-outline-light " role="button" aria-pressed="true">Tic Tac Toe</a>
-                <div class="text-container text-light">
-                    Python implementation of TicTacToe built with Pygame. Developed to familiarize myself with Pygame for 
-                    potential game development as a future project. 
-                </div>
-            </div>      
+      <div class="exp-entry fade-in">
+        <div class="exp-logo-col">
+          <div class="exp-logo">
+            <img src="img/uscFB.jpg" alt="USC Football" />
           </div>
-
-        <div class = "row mt-3 pb-3">
-            <div class="col-sm-5 ">
-                <button type="button" class="btn btn-outline-light" disabled>Fitness Tracker (In Progess)</button>
-                <div class="text-container text-light">
-                    Next project I plan to do. Will update as project develops.
-                </div>
-            </div>
-            <div class="col-sm-2 "></div>
-            <div class="col-sm-5">
-                <!-- <a href="https://github.com/alepach56/Affine-Transformation" class="btn btn-outline-light " role="button" aria-pressed="true">Affine Transformation</a> -->
-                <button type="button" class="btn btn-outline-light" disabled>Affine Transformation</button>
-                <div class="text-container text-light">
-                    DISCLAIMER: GitHub repository temporarily unavailable as it's as a school project. Assembly based program that
-                    takes an image as an input, and can rotate, reflect, shear, or
-                    keep the same image based on the input provided. This program follows the principles from
-                    affine transformations.
-                </div>
-            </div>
-            
+          <div class="exp-logo-line"></div>
         </div>
-    </div>
-</section>
-
-<section id = "contact">
-    <div class = "container mt-4 pt-4">
-        <h1 class = "text-center text-primary"> Contact</h1>
-            <div class="ContactContainer row mt-4">
-                <li><a href="https://github.com/alepach56"><span class="fab fa-github"></span></a></li>
-                <li><a href="https://www.linkedin.com/in/alejandro-pacheco56/"><span class="fab fa-linkedin"></span></a></li>
-                <li><a href="mailto:alejandro.pacheco56@hotmail.com"> <span class="fab fa-microsoft"></span></a></li>
+        <div class="exp-body">
+          <div class="exp-header">
+            <div>
+              <div class="exp-company">USC Football</div>
+              <div class="exp-role">Analytics Intern</div>
             </div>
-            <div class = "container mt-4 pt-4"></div>
-        
-</section>
+            <div class="exp-date">May 2025 — Present</div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Automated weekly data collection by integrating the PFF API, reducing report prep time by 500%.</li>
+            <li>Deliver weekly opponent analysis reports to support game preparation and strategy decisions.</li>
+            <li>Designing a customizable simulator using play-by-play data and expected points models to recommend optimal in-game choices.</li>
+          </ul>
+        </div>
+      </div>
 
-<script src="app.js"></script>
+      <div class="exp-entry fade-in">
+        <div class="exp-logo-col">
+          <div class="exp-logo">
+            <img src="img/pslogo.png" alt="PlayStation" />
+          </div>
+          <div class="exp-logo-line"></div>
+        </div>
+        <div class="exp-body">
+          <div class="exp-header">
+            <div>
+              <div class="exp-company">Sony Interactive Entertainment (PlayStation)</div>
+              <div class="exp-role">Documentation Tools Intern</div>
+            </div>
+            <div class="exp-date">May 2025 — Sep 2025</div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Built a JavaScript plugin for OxygenXML that integrates AWS Lambda to auto-notify users mentioned in documentation comments.</li>
+            <li>Reduced manual maintenance by 70% by designing webhook + email notification systems backed by DynamoDB.</li>
+            <li>Streamlined documentation workflow with user tagging, cutting engineer lookup and response times by 30%+.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-entry fade-in">
+        <div class="exp-logo-col">
+          <div class="exp-logo">
+            <img src="img/eg.png" alt="Expedia Group" />
+          </div>
+          <div class="exp-logo-line"></div>
+        </div>
+        <div class="exp-body">
+          <div class="exp-header">
+            <div>
+              <div class="exp-company">Expedia Group</div>
+              <div class="exp-role">Data Science &amp; Analytics Intern</div>
+            </div>
+            <div class="exp-date">May 2024 — Jul 2024</div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Developed a composite metric to assess retail customer service interaction effectiveness.</li>
+            <li>Queried millions of rows in SQL to identify satisfaction drivers and uncover growth opportunities.</li>
+            <li>Built executive-level Tableau dashboards; reduced phone service interaction length by 0.25% within month one.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-entry fade-in">
+        <div class="exp-logo-col">
+          <div class="exp-logo">
+            <img src="img/SDSULogo.jpg" alt="SDSU" />
+          </div>
+          <div class="exp-logo-line"></div>
+        </div>
+        <div class="exp-body">
+          <div class="exp-header">
+            <div>
+              <div class="exp-company">AI4Business Lab — SDSU</div>
+              <div class="exp-role">Research Assistant</div>
+            </div>
+            <div class="exp-date">Apr 2024 — Jan 2025</div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Researched large language models and their applications to software engineering and code generation under Dr. Luwen Huangfu.</li>
+            <li>Analyzed hundreds of research papers to evaluate the future of large code models and identify open challenges.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-entry fade-in">
+        <div class="exp-logo-col">
+          <div class="exp-logo">
+            <img src="img/SDSULogo.jpg" alt="SDSU" />
+          </div>
+        </div>
+        <div class="exp-body">
+          <div class="exp-header">
+            <div>
+              <div class="exp-company">San Diego State University</div>
+              <div class="exp-role">Teaching Assistant</div>
+            </div>
+            <div class="exp-date">Aug 2022 — May 2024</div>
+          </div>
+          <ul class="exp-bullets">
+            <li>TA for Computer Organization across 2 sections (140+ students).</li>
+            <li>Wrote grading scripts to automatically evaluate student labs and homework.</li>
+            <li>Held 2 weekly office hours to mentor students on programming assignments.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-entry fade-in">
+        <div class="exp-logo-col">
+          <div class="exp-logo">
+            <img src="img/Daily-Harvest-Logo.png" alt="Daily Harvest" />
+          </div>
+          <div class="exp-logo-line"></div>
+        </div>
+        <div class="exp-body">
+          <div class="exp-header">
+            <div>
+              <div class="exp-company">Daily Harvest</div>
+              <div class="exp-role">Software Engineering Intern</div>
+            </div>
+            <div class="exp-date">May 2022 — Aug 2022</div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Upgraded legacy shipment-criteria logic by removing complex tool dependencies and refactoring to fit current systems.</li>
+            <li>Built shared libraries to improve server efficiency and code readability.</li>
+            <li>Created RESTful APIs with Flask and configured Terraform for async task queues on GCP.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-eyebrow fade-in">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Projects</h2>
+      <div class="section-rule"></div>
+    </div>
+    <div class="projects-grid">
+      <div class="proj-card fade-in">
+        <div class="proj-top">
+          <span class="badge-corp">corporate</span>
+        </div>
+        <div class="proj-name">USC Football Analytics</div>
+        <p class="proj-desc">Internal tooling for the USC Football analytics. Create data pipelines via the PFF API, generates weekly scouting reports, and powers a play simulator using expected points models for in-game decisions.</p>
+        <div class="proj-stack">
+          <span class="stack-chip">SQL</span>
+          <span class="stack-chip">PFF API</span>
+          <span class="stack-chip">Data Analytics</span>
+        </div>
+      </div>
+
+        <div class="proj-card fade-in">
+            <div class="proj-top">
+                <span class="badge-wip">coming soon</span>
+            </div>
+            <div class="proj-name">Teamwork Job Parser</div>
+            <p class="proj-desc">Python web scraping script that sends emails to users for new sports job openings in California.</p>
+            <div class="proj-stack">
+                <span class="stack-chip">Web Scraping</span>
+                <span class="stack-chip">Python</span>
+            </div>
+        </div>
+
+      <div class="proj-card fade-in">
+        <div class="proj-top">
+          <span class="badge-wip">coming soon</span>
+        </div>
+        <div class="proj-name">Spotify Wrapped Clone</div>
+        <p class="proj-desc">A Spotify Wrapped-style web application that visualizes your personal listening data.</p>
+        <div class="proj-stack">
+          <span class="stack-chip">Spotify API</span>
+          <span class="stack-chip">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="proj-card fade-in">
+        <div class="proj-top">
+          <span class="badge-wip">in progress</span>
+        </div>
+        <div class="proj-name">Fitness Tracker</div>
+        <p class="proj-desc">In-progress fitness tracking application. Will be updated as the project develops.</p>
+        <div class="proj-stack"></div>
+      </div>
+
+      <div class="proj-card fade-in">
+        <div class="proj-top">
+          <a href="https://github.com/alepach56/Personal-Website" class="badge-github" target="_blank">↗ github</a>
+        </div>
+        <div class="proj-name">Personal Portfolio</div>
+        <p class="proj-desc">This portfolio website, built with HTML, CSS, and JavaScript. Continuously updated.</p>
+        <div class="proj-stack">
+          <span class="stack-chip">HTML</span>
+          <span class="stack-chip">CSS</span>
+          <span class="stack-chip">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="proj-card fade-in">
+        <div class="proj-top">
+          <a href="https://github.com/alepach56/TriviaGame" class="badge-github" target="_blank">↗ github</a>
+        </div>
+        <div class="proj-name">Trivia Game</div>
+        <p class="proj-desc">Java trivia game using a balanced binary tree to adaptively adjust question difficulty based on player performance.</p>
+        <div class="proj-stack">
+          <span class="stack-chip">Java</span>
+          <span class="stack-chip">Binary Tree</span>
+        </div>
+      </div>
+
+      <div class="proj-card fade-in">
+        <div class="proj-top">
+          <a href="https://github.com/alepach56/TicTacToe" class="badge-github" target="_blank">↗ github</a>
+        </div>
+        <div class="proj-name">Tic Tac Toe</div>
+        <p class="proj-desc">Python TicTacToe built with Pygame to explore game development fundamentals as a foundation for future projects.</p>
+        <div class="proj-stack">
+          <span class="stack-chip">Python</span>
+          <span class="stack-chip">Pygame</span>
+        </div>
+      </div>
+
+      <div class="proj-card fade-in">
+        <div class="proj-top">
+          <span class="badge-wip">repo private</span>
+        </div>
+        <div class="proj-name">Affine Transformation</div>
+        <p class="proj-desc">Assembly-based program that applies rotate, reflect, or shear transformations to images following affine transformation math.</p>
+        <div class="proj-stack">
+          <span class="stack-chip">Assembly</span>
+          <span class="stack-chip">Image Processing</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="section-eyebrow fade-in">
+      <span class="section-num">04</span>
+      <h2 class="section-title">Education</h2>
+      <div class="section-rule"></div>
+    </div>
+    <div class="edu-grid">
+
+      <div class="edu-card fade-in">
+        <div class="edu-logo">
+          <img src="img/USClogo.jpg" alt="USC" />
+        </div>
+        <div class="edu-school">University of Southern California</div>
+        <div class="edu-degree">M.S. Computer Science</div>
+        <div class="edu-detail">
+          Member of Trojan Sports Research Lab<br />
+          Machine Learning · Geospatial Data · Algorithms · Databases
+        </div>
+        <span class="edu-gpa">GPA: 3.5 / 4.0</span>
+      </div>
+
+      <div class="edu-card fade-in">
+        <div class="edu-logo">
+          <img src="img/SDSULogo2.jpg" alt="SDSU" />
+        </div>
+        <div class="edu-school">San Diego State University</div>
+        <div class="edu-degree">B.S. Computer Science · Statistics Minor</div>
+        <div class="edu-detail">
+          Summa Cum Laude, Weber Honors College, Dean's List 2021-2025<br />
+          Data Structures · Computer Organization · Machine Learning · AI · Cloud Computing<br />
+          Founded Aztec Quantum Computing Club, Teaching Assistant and Grader
+        </div>
+        <span class="edu-gpa">GPA: 3.88 / 4.0</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-eyebrow fade-in">
+      <span class="section-num">05</span>
+      <h2 class="section-title">Contact</h2>
+      <div class="section-rule"></div>
+    </div>
+    <div class="contact-wrap fade-in">
+      <p class="contact-intro">
+        I'm always open to hearing about new opportunities or research collaborations. Feel free to reach out!
+      </p>
+      <div class="contact-links">
+        <a href="https://github.com/alepach56" class="contact-link" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/alejandro-pacheco56/" class="contact-link" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="mailto:alejandro.pacheco56@hotmail.com" class="contact-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          Email
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>Built with HTML · CSS · JS</span>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
-

@@ -1,19 +1,11 @@
-const header = document.querySelector('.navbar');
+// Scroll fade-in
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.08 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-window.onscroll = function() {
-    var top = window.scrollY;
-    if(top >=100) {
-        header.classList.add('navbarScroll');
-    }
-    else if (top < 100){
-        header.classList.remove('navbarScroll');
-    }
-}
-
-
-var typed = new Typed(".auto-type", {
-    strings:["Alejandro Pacheco", "a student"],
-    typeSpeed: 75,
-    backSpeed: 75,
-    loop: true
+// Nav on scroll
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 40);
 });
